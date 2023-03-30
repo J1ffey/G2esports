@@ -1,8 +1,10 @@
-import Vue from 'vue'
-import App from './App.vue'
-
-Vue.config.productionTip = false
+import Vue from 'vue';
+import 'font-awesome/css/font-awesome.css';
+import App from './App.vue';
+Vue.config.productionTip = false;
 
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+    render: function (h) {
+        return h(App);
+    },
+}).$mount('#app');

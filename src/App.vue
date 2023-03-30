@@ -1,28 +1,29 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+     <TopHead/>
+     <MyHead/>
+     <GoodVideo/>
+     <DownVideo/>
+     <CounterPlayer/>
+     <OurAchievements/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import MyHead from './components/MyHead.vue'
+import TopHead from './components/TopHead.vue';
+import GoodVideo from './components/GoodVideo.vue'
+import DownVideo from './components/DownVideo.vue'
+import CounterPlayer from './components/CounterPlayer.vue'
+import OurAchievements from './components/OurAchievements.vue';
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  components: { MyHead, TopHead, GoodVideo, DownVideo, CounterPlayer,OurAchievements}
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+* {
+  margin: 0;
 }
 </style>
