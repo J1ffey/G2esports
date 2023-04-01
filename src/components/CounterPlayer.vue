@@ -6,26 +6,40 @@
         <h1 style="color:red">COUNTER-STRIKE : GLOBAL OFFENSIVE</h1>
         </div>
         <div class="playerlist">
-            <div class="player-item">
-                <img src="../assets/jks.webp" alt="jks">
+            <div class="outbox">
+                <div class="player-item">
+                    <img src="../assets/jks.webp" alt="jks">
+                </div>
             </div>
-            <div class="player-item">
-                <img src="../assets/Hooxi.webp" alt="hooxi">
+            <div class="outbox">
+                <div class="player-item">
+                    <img src="../assets/Hooxi.webp" alt="hooxi">
+                </div>
             </div>
-            <div class="player-item">
-                <img src="../assets/m0nesy.webp" alt="monesy">
+            <div class="outbox">
+                <div class="player-item">
+                    <img src="../assets/Niko.webp" alt="Niko">
+                </div>
             </div>
-            <div class="player-item">
-                <img src="../assets/Niko.webp" alt="niko">
+            <div class="outbox">
+                <div class="player-item">
+                    <img src="../assets/m0nesy.webp" alt="Monesy">
+                </div>
             </div>
-            <div class="player-item">
-                <img src="../assets/Hunter.webp" alt="hunter">
+            <div class="outbox">
+                <div class="player-item">
+                    <img src="../assets/Hunter.webp" alt="Hunter">
+                </div>
             </div>
-            <div class="player-item">
-                <img src="../assets/Swani.webp" alt="swani">
+            <div class="outbox">
+                <div class="player-item">
+                    <img src="../assets/Swani.webp" alt="Swani">
+                </div>
             </div>
-            <div class="player-item">
-                <img src="../assets/Peca.webp" alt="peca">
+            <div class="outbox">
+                <div class="player-item">
+                    <img src="../assets/Peca.webp" alt="Peca">
+                </div>
             </div>
         </div>
     </div>
@@ -38,6 +52,10 @@
 </script>
 
 <style scoped>
+.outbox div:hover img{
+    filter: blur(4px);
+    transition-duration: 1s;
+}
 .cs{
     margin: auto;
     text-align: center;

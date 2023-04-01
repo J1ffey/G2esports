@@ -1,11 +1,12 @@
 <template>
     <div class="top-head">
         <div class="top-head-banner">
-                <p>All  the  stars  lead  me  to  champion,  Congratulations  to  Faze Clan on  winning  EPL  S17. And  G2 is ready for next major.</p>
+                <p v-show="Major">All  the  stars  lead  me  to  champion,  Congratulations  to  Faze Clan on  winning  EPL  S17. And  G2 is ready for next major.</p>
+                <p v-show="major">漫天星河为我引！Faze赢得EPL S17冠军&英特尔大满贯第四赛季</p>
         </div>
         <div class="worldwide">
             <a href="#">
-            <span>REST OF THE WORLD <i class="fa fa-globe fa-lg" style=" color: black;"/></span>
+            <span @click="onClick">REST OF THE WORLD <i class="fa fa-globe fa-lg" style=" color: black;"/></span>
             </a>
         </div>
         <div class="help">
@@ -17,11 +18,29 @@
 
 <script>
     export default {
-        name:'TopHead'
+        name:'TopHead',
+        data(){
+            return{
+                Major:true,
+                major:false
+            }
+        },
+        methods:{
+    onClick(){
+        this.Major = !this.Major;
+        this.major = !this.major;
+    }
+  }
+        
     }
 </script>
 
 <style scoped>
+.top-head{
+    position: fixed;
+    overflow: visible;
+    z-index:1;
+}
 a:link {color: white; text-decoration:none;}
 .help{
     display: flex;

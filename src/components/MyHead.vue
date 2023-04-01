@@ -44,22 +44,22 @@
                     <ul>
                         <li>
                     <a href="https://g2esports.com/account?view=dashboard">
-                        <i class="fa fa-user fa-2x" style="color: black;"></i>
+                        <i class="fa fa-user fa-lg"></i>
                     </a>
                         </li>
                         <li>
                             <a href="https://g2esports.com/pages/wishlist">
-                                <i class="fa fa-heart fa-2x" ></i>
+                                <i class="fa fa-heart fa-lg" ></i>
                             </a>
                         </li>
                         <li>
                             <a href="https://g2esports.com/search">
-                                <i class="fa fa-search fa-2x "></i>
+                                <i class="fa fa-search fa-lg "></i>
                             </a>
                         </li>
                         <li>
                             <a href="https://g2esports.com/cart">
-                                <i class="fa fa-shopping-cart fa-2x" />
+                                <i class="fa fa-shopping-cart fa-lg" />
                             </a>
                         </li>
                     </ul>
@@ -75,6 +75,12 @@
 </script>
 
 <style scoped>
+.MyHead{
+    position: fixed;
+    width: 100%;
+    margin-top: 40px;
+    z-index:1;
+}
 .head-img{
     position: relative;
     display: inline-flex;
@@ -85,10 +91,14 @@
     display: inline;
     padding: 18px;
 }
+.head-img ul li a{
+    transition: color 0.5s;
+}
 li{
     list-style-type:none
 }
 a:link {color: black; text-decoration:none;}
+a:visited{color: #000;}
 a:hover {color: red;}
 .h2-logo li a{
     margin-right: 42px;
@@ -129,8 +139,9 @@ header {
     position: absolute;
     right: 0;
     top: 0;
-    height: 100%;
+    height: 50%;
     width: 1px;
+    margin-top: 23%;
 }
 
 </style>
